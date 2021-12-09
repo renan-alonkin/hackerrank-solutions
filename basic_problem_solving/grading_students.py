@@ -11,8 +11,7 @@ def gradingStudents(grades):
         minor_than_40 = rounded_grade < 40
         bigger_than_3 = diff_to_next_multiple_of_5 >= 3
 
-        results.append(grade) \
-            if (bigger_than_3 or minor_than_40) else results.append(
+        results.append(grade) if (bigger_than_3 or minor_than_40) else results.append(
             rounded_grade
         )
 
